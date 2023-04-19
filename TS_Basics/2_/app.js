@@ -3,7 +3,7 @@ function add(n1, n2, showResult, phrase) {
     var result = n1 + n2;
     if (showResult) {
         //string + number + number => String;
-        console.log(n1 + n2 + 'hello');
+        console.log(phrase + result);
     }
     else {
         return n1 + n2;
