@@ -13,11 +13,24 @@
 // console.log('She is a lady and her age is', Person.age);
 
 //Normal object defination
-let Person = {
+let Person:{
+    name: string,
+    age: number,
+    hobbies: string[],
+    // role is  a tuple: tuple is speical kind of array, where total number of element is predefined, along with their types.
+    //downside of it is array.push() still works onto it.  
+    role: [number, string]
+} = {
     name: 'sansrit',
-    age: '27',
-    hobbies: ['Sports', 'Music', 'Cooking']
+    age: 27,
+    hobbies: ['Sports', 'Music', 'Cooking'],
+    role: [2, 'author']
 };
+//adding to tuple, role
+
+Person.role.push('admin')
+//tuple downside still array.push works
+// console.log('this is current role', Person.role);
 
 //to defined arrya of mixed type write :[any]
 let favouriteAct : string[];

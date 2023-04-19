@@ -12,9 +12,14 @@
 //Normal object defination
 var Person = {
     name: 'sansrit',
-    age: '27',
-    hobbies: ['Sports', 'Music', 'Cooking']
+    age: 27,
+    hobbies: ['Sports', 'Music', 'Cooking'],
+    role: [2, 'author']
 };
+//adding to tuple, role
+Person.role.push('admin');
+console.log('this is current role', Person.role);
+//to defined arrya of mixed type write :[any]
 var favouriteAct;
 favouriteAct = ['Swimming, Music'];
 console.log(Person.name);
