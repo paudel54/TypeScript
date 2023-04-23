@@ -18,6 +18,14 @@ function printResult(num:number):void{
     console.log('Result: ', num)
 }
 
+
+//Ts with Callbacks
+//=>void implies no return 
+function addAndHandle(n1:number, n2:number, cb:(num:number)=>void){
+    const result = n1+n2;
+    cb(result);
+}
+
 printResult(add(10,2));
 // let combineValues: Function;
 
@@ -28,3 +36,8 @@ combineValues = add;
 // combineValues = 10;
 
 console.log(combineValues(2,9));
+
+//anonyomous function as 3rd parameter
+addAndHandle(10,20,(result)=>{
+    console.log(result);
+})
