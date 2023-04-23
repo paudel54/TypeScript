@@ -17,5 +17,3 @@ if(typeof userInput === 'string'){
     userName = userInput;
 }
 
-
-
