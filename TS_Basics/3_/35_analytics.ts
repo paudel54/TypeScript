@@ -5,3 +5,5 @@
 //step-3 tsc -w
 
 console.log(' On Test system! QC passed');
+
+//seting up compoilation targert
