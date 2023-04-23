@@ -13,9 +13,18 @@
 function add(n1:number, n2:number){
     return n1+n2;
 }
-
+//here void is return type of fn
 function printResult(num:number):void{
     console.log('Result: ', num)
 }
 
 printResult(add(10,2));
+// let combineValues: Function;
+
+//Argument should be number and return type should also be number 
+let combineValues :(a:number, b:number)=>number;
+combineValues = add;
+// combineValues = printResult;
+// combineValues = 10;
+
+console.log(combineValues(2,9));
