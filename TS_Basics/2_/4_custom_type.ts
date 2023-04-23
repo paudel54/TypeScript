@@ -41,3 +41,5 @@ console.log(combineValues(2,9));
 addAndHandle(10,20,(result)=>{
     console.log(result);
 })
+
+//unknown types in TS:
