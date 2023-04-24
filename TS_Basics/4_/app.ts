@@ -30,7 +30,7 @@ console.log('this is result',result);
 //es6 arrow functions. 
 //for one expression can omit curly brases and also remove return keyword
 
-const addition = (a:number, b:number)=>{
+const addition = (a:number, b:number = 9)=>{
     return a+b;
 }
 console.log(addition(7,3));
@@ -38,4 +38,6 @@ console.log(addition(7,3));
 //if function takes only one parameter
 //if it was TS we can remove the brackets () this. 
 const printOutput = (output:string | number)=>console.log(output);
-printOutput(addition(10,8));
+printOutput(addition(10));
+
+//defalut function Parameter: we can privide default value
