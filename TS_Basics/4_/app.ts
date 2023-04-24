@@ -41,3 +41,46 @@ const printOutput = (output:string | number)=>console.log(output);
 printOutput(addition(10));
 
 //defalut function Parameter: we can privide default value
+
+//rest operator
+
+const hobbies = ['sports', 'cooking']
+const activeHobbies = ['gaming']
+//we can access by index hobbies[1];
+//hobbies array is spread out and copies to swimming array.
+const activeHobbies1 = ['swimming',...hobbies]
+//we can extract all the value with...
+
+//?? how can const be reassigned ! push method works into it huh?
+//array are objects and linked with reference so possiable. memory is changed 
+//but the reference is not changed. 
+//need to add one element once so, it can be cumbersome on adding large 
+//array element , therefor here comes a spread operator baby
+// TS won't allow 
+// activeHobbies.push(hobbies);
+// activeHobbies.push(hobbies[0], hobbies[2]);
+
+//this is the reason why spread operator came
+//... tells JS to pullout all element of an array
+
+
+//Spread Operator on objects:
+const person = {
+    name: 'Sansrit',
+    age: '27'
+};
+
+const copiedPerson = {...person}
+
+
+// const person = {
+//     name: 'Sansrit',
+//     age: '27'
+// };
+
+// const copiedPerson = {...person}
+// copiedPerson.name = 'Jangam';
+// copiedPerson.age = 23;
+
+// console.log('this is person', person);
+// console.log('this is copiedPerson', copiedPerson)
