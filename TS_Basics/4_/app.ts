@@ -84,3 +84,23 @@ const copiedPerson = {...person}
 
 // console.log('this is person', person);
 // console.log('this is copiedPerson', copiedPerson)
+
+//worked on with rest on fetching argument as list
+const jodey = (...num:number[])=>{
+    return num.reduce((cR,cV)=>{
+        return cR + cV;
+    },0);
+}
+
+const addedNumbers = jodey(2,6,7,4,3,9,12,3);
+
+
+//object destructuing making access with index shortcuts> 
+//pull element out of an array:
+
+//array destructuing. 
+const test = ['q','w','r','y','o','p'];
+//desturcting dont' change new aray
+//val1 will be holding q, val2 will be holding w and ['r','y','o','p'] 
+const [val1 , val2 , ...rest] = test;
+ 
