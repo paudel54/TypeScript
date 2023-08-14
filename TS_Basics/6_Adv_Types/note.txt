@@ -22,3 +22,11 @@ if('property' in Type/interface){
 86. Index properties. 
 
 87. Function Overload. 
+    same function with same name and with diff parameters and according to fit will work on . 
+
+88. Optional Chaining (?.)
+
+90. Nullish Coalescing. 
+    if value is null give them a fallback value. 
+    nullish Coalescing operator ?? 
+    

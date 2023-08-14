@@ -20,3 +20,19 @@ function add(a:Combinable, b:Combinable){
 
 const result = add('pemba', ' suraj');
 result.split(' ')
+
+
+// Optional chaining ?.
+const fetchedUserData = {
+    id: 'u1',
+    name: 'Max',
+    job: {title: 'CEO', description: "My Own Company"}
+};
+
+console.log(fetchedUserData?.job?.title);
+
+
+const userInput = " ";
+// If userInput is null or undefined then assign it as 'DEFAULT' as fallback Value. 
+const storeData = userInput ?? 'DEFAULT';
+console.log(storeData)
