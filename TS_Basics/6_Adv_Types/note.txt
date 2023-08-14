@@ -10,5 +10,7 @@ Function Overloads.
 => interaction &&
 typeguards
 if('property' in Type/interface){
-    
+
 }
+
+84. Discriminated Unions:::: 

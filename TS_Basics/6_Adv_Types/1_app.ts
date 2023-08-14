@@ -91,4 +91,38 @@ function useVehicle(vehicle:Vehicle){
     
 }
 
-useVehicle(v2);
+// useVehicle(v2);
+
+// Discriminated Unions::=> We have noew common property in both interface and check with switches. 
+
+interface Bird{
+    type: 'bird';
+    flyingSpeed: number;
+}
+
+interface Horse{
+    type: 'horse';
+    runningSpeed: number;
+}
+
+type Animal = Bird | Horse;
+
+function moveAnimal(animal: Animal){
+    // if('flyingSpeed' in animal){
+    //     console.log('MOving with speed' + animal.flyingSpeed);
+    // }
+    let speed;
+    switch (animal.type){
+        case 'bird':
+            speed = animal.flyingSpeed;
+            break;
+        case 'horse':
+            speed = animal.runningSpeed
+    }
+    console.log('Moving at speed: ' + speed);
+}
+
+moveAnimal({
+    type: 'bird',
+    flyingSpeed:20
+})

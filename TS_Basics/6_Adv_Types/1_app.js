@@ -48,4 +48,21 @@ function useVehicle(vehicle) {
         vehicle.loadCargo(3000);
     }
 }
-useVehicle(v2);
+function moveAnimal(animal) {
+    // if('flyingSpeed' in animal){
+    //     console.log('MOving with speed' + animal.flyingSpeed);
+    // }
+    var speed;
+    switch (animal.type) {
+        case 'bird':
+            speed = animal.flyingSpeed;
+            break;
+        case 'horse':
+            speed = animal.runningSpeed;
+    }
+    console.log('Moving at speed: ' + speed);
+}
+moveAnimal({
+    type: 'bird',
+    flyingSpeed: 20
+});
