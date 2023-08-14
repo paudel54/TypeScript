@@ -1,1 +1,4 @@
 //Class Interafce
+
+interface defines the structure of object
+mainly how it's types should look like. 
