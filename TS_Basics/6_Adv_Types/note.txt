@@ -6,3 +6,9 @@ Type Casting .
 Function Overloads. 
 
 83: the inter interaction are typeScript inbuilt types. 
+=> union or ||
+=> interaction &&
+typeguards
+if('property' in Type/interface){
+    
+}

@@ -43,3 +43,52 @@ type Combinable = string | number;
 type Numeric = number | boolean;
 // here Univeral would be interaction of two types hence would be number type. because Number is common type. 
 type Universal = Combinable & Numeric;
+
+
+//MOre on type guard
+function add(a:Combinable, b:Combinable){
+    // return a+b; Throws an error because it's not valid for two union type need of type Guard. 
+    if(typeof a === 'string' || typeof b === 'string'){
+        return a.toString() + b.toString();
+    }
+    return a+b;
+}
+
+// Another type of type Guard: if("" in emp)
+function printEmployeeInformation(emp:MixedUp){
+    console.log("Name" + emp.name)
+}
+
+
+// on classbased
+
+class Car{
+    drive(){
+        console.log('Driving.......');
+    }
+}
+
+class Truck {
+    drive(){
+        console.log("Driving a truck...");
+    }
+
+    loadCargo(amount:number){
+        console.log('Loading Cargo..'+ amount)
+    }
+}
+
+type Vehicle = Car | Truck;
+
+const v1 = new Car();
+const v2 = new Truck();
+
+function useVehicle(vehicle:Vehicle){
+    vehicle.drive();
+    if('loadCargo' in vehicle){
+        vehicle.loadCargo(3000)
+    }
+    
+}
+
+useVehicle(v2);
