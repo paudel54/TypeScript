@@ -126,3 +126,15 @@ moveAnimal({
     type: 'bird',
     flyingSpeed:20
 })
+
+//Index Properties: 
+
+interface ErrorContainer {
+    [prop:string]: string;
+}
+
+const errorBag: ErrorContainer = {
+    // Here Key and value both must be of string type as defined on interface. 
+    email: 'Not a valid Email.',
+    username: 'Must start with capital Character'
+}

@@ -14,3 +14,9 @@ if('property' in Type/interface){
 }
 
 84. Discriminated Unions:::: 
+
+85. Type Casting. 
+    Two ways:=> use of angle bracket <TYPE>anything after the <> would be of that type. 
+    can express with as like  content as TYPE. 
+
+86. Index properties. 
