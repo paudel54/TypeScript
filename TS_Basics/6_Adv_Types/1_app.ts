@@ -138,3 +138,6 @@ const errorBag: ErrorContainer = {
     email: 'Not a valid Email.',
     username: 'Must start with capital Character'
 }
+
+// FUnction Overload. 
+

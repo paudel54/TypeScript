@@ -20,3 +20,5 @@ if('property' in Type/interface){
     can express with as like  content as TYPE. 
 
 86. Index properties. 
+
+87. Function Overload. 
