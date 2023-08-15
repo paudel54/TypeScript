@@ -36,3 +36,4 @@ const userInput = " ";
 // If userInput is null or undefined then assign it as 'DEFAULT' as fallback Value. 
 const storeData = userInput ?? 'DEFAULT';
 console.log(storeData)
+

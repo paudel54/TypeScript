@@ -30,3 +30,4 @@ if('property' in Type/interface){
     if value is null give them a fallback value. 
     nullish Coalescing operator ?? 
     
+93. Generics::=> Flexible and Re-Usable Code. 
