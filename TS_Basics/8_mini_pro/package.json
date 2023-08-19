@@ -1,0 +1,14 @@
+{
+  "name": "ts-mini-project",
+  "version": "1.0.0",
+  "description": "Understanding TS ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Ts"
+  ],
+  "author": "sansrit paudel",
+  "license": "ISC"
+}
